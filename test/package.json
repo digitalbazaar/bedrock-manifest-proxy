@@ -1,0 +1,30 @@
+{
+  "name": "bedrock-manifest-proxy-test",
+  "version": "0.0.1-0",
+  "private": true,
+  "scripts": {
+    "test": "node --preserve-symlinks test.js test",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary npm test",
+    "coverage-ci": "cross-env NODE_ENV=test nyc --reporter=text-lcov npm test > coverage.lcov",
+    "coverage-report": "nyc report"
+  },
+  "dependencies": {
+    "bedrock": "^3.1.0",
+    "bedrock-express": "^3.1.0",
+    "bedrock-https-agent": "^1.0.1",
+    "bedrock-manifest-proxy": "file:..",
+    "bedrock-server": "^2.4.1",
+    "bedrock-test": "^5.1.0",
+    "cross-env": "^7.0.2",
+    "nyc": "^15.0.1"
+  },
+  "nyc": {
+    "excludeNodeModules": false,
+    "include": [
+      "node_modules/bedrock-manifest-proxy/**"
+    ],
+    "exclude": [
+      "node_modules/bedrock-manifest-proxy/node_modules/**"
+    ]
+  }
+}
