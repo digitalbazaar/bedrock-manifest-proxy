@@ -6,14 +6,14 @@
 const {ManifestClient} = require('@digitalbazaar/web-app-manifest-utils');
 const brHttpsAgent = require('bedrock-https-agent');
 
-describe(`Manifest Client`, () => {
+describe(`Manifest Proxy Node`, () => {
   describe(`'/manifest.json' Tests`, () => {
     it(`success response'`,
       async () => {
-        const baseUrl = 'https://wallet.interop.digitalbazaar.com/';
+        const host = 'frontendmasters.com';
         const {httpsAgent} = brHttpsAgent;
         const manifestClient = new ManifestClient({
-          baseUrl,
+          host,
           httpsAgent,
         });
 
@@ -26,6 +26,24 @@ describe(`Manifest Client`, () => {
         }
         console.log(err);
         console.log(JSON.stringify(result, null, 2));
+      }
+    );
+
+    it(`404 error when there is no manifest without proxy'`,
+      async () => {
+        const host = 'en.wikipedia.org';
+        const manifestClient = new ManifestClient({host});
+
+        let result;
+        let err;
+        try {
+          result = await manifestClient.getManifest();
+        } catch(e) {
+          err = e;
+        }
+        should.exist(err);
+        console.log('STATUS', err.status);
+        err.status.should.equal(404)
       }
     );
   });
