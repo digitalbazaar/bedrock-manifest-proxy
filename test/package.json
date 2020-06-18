@@ -9,6 +9,8 @@
     "coverage-report": "nyc report"
   },
   "dependencies": {
+    "@digitalbazaar/http-client": "^1.0.0",
+    "@digitalbazaar/web-app-manifest-utils": "digitalbazaar/web-app-manifest-utils#initial",
     "bedrock": "^3.1.0",
     "bedrock-express": "^3.1.0",
     "bedrock-https-agent": "^1.0.1",
