@@ -24,8 +24,9 @@ describe(`Manifest Proxy Node`, () => {
         } catch(e) {
           err = e;
         }
-        console.log(err);
-        console.log(JSON.stringify(result, null, 2));
+        should.exist(result);
+        should.not.exist(err);
+        result.should.include.keys(['icons']);
       }
     );
 
@@ -42,8 +43,8 @@ describe(`Manifest Proxy Node`, () => {
           err = e;
         }
         should.exist(err);
-        console.log('STATUS', err.status);
-        err.status.should.equal(404)
+        should.not.exist(result);
+        err.status.should.equal(404);
       }
     );
   });

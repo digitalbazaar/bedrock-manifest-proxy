@@ -5,7 +5,7 @@ import {ManifestClient} from '@digitalbazaar/web-app-manifest-utils';
 
 describe(`Manifest Proxy Browser`, () => {
   describe(`'/manifest.json' Tests`, () => {
-    it.only(`success response'`,
+    it(`success response'`,
       async () => {
         const host = 'frontendmasters.com';
         const manifestClient = new ManifestClient({host, manifestProxy: true});
@@ -17,8 +17,9 @@ describe(`Manifest Proxy Browser`, () => {
         } catch(e) {
           err = e;
         }
-        console.log(err);
-        console.log(JSON.stringify(result, null, 2));
+        should.exist(result);
+        should.not.exist(err);
+        result.should.include.keys(['icons']);
       }
     );
 
@@ -35,8 +36,8 @@ describe(`Manifest Proxy Browser`, () => {
           err = e;
         }
         should.exist(err);
-        console.log('STATUS', err.status);
-        err.status.should.equal(404)
+        should.not.exist(result);
+        err.status.should.equal(404);
       }
     );
   });
