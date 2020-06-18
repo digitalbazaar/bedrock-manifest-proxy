@@ -8,3 +8,10 @@ const path = require('path');
 
 config.mocha.tests.push(path.join(__dirname, 'mocha'));
 config['https-agent'].rejectUnauthorized = false;
+
+config.karma.suites['bedrock-manifest-proxy'] = path.join('web', '**', '*.js');
+
+config.karma.config.proxies = {
+  '/': 'https://localhost:18443'
+};
+config.karma.config.proxyValidateSSL = false;

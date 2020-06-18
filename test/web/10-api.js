@@ -1,21 +1,14 @@
 /*
  * Copyright (c) 2020 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
-
-const {ManifestClient} = require('@digitalbazaar/web-app-manifest-utils');
-const brHttpsAgent = require('bedrock-https-agent');
+import {ManifestClient} from '@digitalbazaar/web-app-manifest-utils';
 
 describe(`Manifest Client`, () => {
   describe(`'/manifest.json' Tests`, () => {
     it(`success response'`,
       async () => {
         const baseUrl = 'https://wallet.interop.digitalbazaar.com/';
-        const {httpsAgent} = brHttpsAgent;
-        const manifestClient = new ManifestClient({
-          baseUrl,
-          httpsAgent,
-        });
+        const manifestClient = new ManifestClient({baseUrl});
 
         let result;
         let err;

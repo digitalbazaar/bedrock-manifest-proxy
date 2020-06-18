@@ -7,4 +7,5 @@ const bedrock = require('bedrock');
 require('bedrock-manifest-proxy');
 
 require('bedrock-test');
+require('bedrock-karma');
 bedrock.start();
