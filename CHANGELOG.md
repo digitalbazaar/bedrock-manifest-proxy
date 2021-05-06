@@ -1,6 +1,6 @@
 # bedrock-manifest-proxy ChangeLog
 
-## 0.1.0 - 2019-xx-xx
+## 1.0.0 - 2021-05-06
 
 ### Added
 - Added core files.
