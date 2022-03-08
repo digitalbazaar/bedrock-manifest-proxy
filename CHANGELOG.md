@@ -1,6 +1,6 @@
 # bedrock-manifest-proxy ChangeLog
 
-## 1.1.0 - 2022-03-xx
+## 1.1.0 - 2022-03-08
 
 ### Changed
 - Update deps.
