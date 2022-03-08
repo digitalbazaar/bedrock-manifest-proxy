@@ -1,5 +1,15 @@
 # bedrock-manifest-proxy ChangeLog
 
+## 1.1.0 - 2022-03-xx
+
+### Changed
+- Update deps.
+- Update peer deps:
+  - `bedrock@4.4`
+  - `bedrock-express@6.2`
+  - `bedrock-https-agent@2`
+  - `bedrock-server@3.1`
+
 ## 1.0.0 - 2021-05-06
 
 ### Added
