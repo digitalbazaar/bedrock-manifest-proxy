@@ -1,5 +1,16 @@
 # bedrock-manifest-proxy ChangeLog
 
+## 1.2.0 - 2022-03-xx
+
+### Changed
+- Update peer deps:
+  - `bedrock@4.5`
+  - `bedrock-express@6.4.1`
+  - `bedrock-https-agent@2.3`
+  - `bedrock-server@3.2.1`.
+- Update internals to use esm style and use `esm.js` to
+  transpile to CommonJS.
+
 ## 1.1.0 - 2022-03-08
 
 ### Changed

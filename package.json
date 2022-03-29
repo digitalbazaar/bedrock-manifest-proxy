@@ -27,20 +27,23 @@
   "dependencies": {
     "@digitalbazaar/http-client": "^2.0.1",
     "content-type": "^1.0.4",
+    "esm": "^3.2.25",
     "http-cache-semantics": "^4.0.3",
     "lru-cache": "^6.0.0"
   },
   "peerDependencies": {
-    "bedrock": "^4.4.3",
-    "bedrock-express": "^6.3.0",
-    "bedrock-https-agent": "^2.0.0",
-    "bedrock-server": "^3.1.0"
+    "bedrock": "^4.5.0",
+    "bedrock-express": "^6.4.1",
+    "bedrock-https-agent": "^2.3.0",
+    "bedrock-server": "^3.2.1"
   },
   "directories": {
     "lib": "./lib"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "eslint-config-digitalbazaar": "^2.8.0"
+    "eslint-config-digitalbazaar": "^2.8.0",
+    "eslint-plugin-jsdoc": "^37.9.7",
+    "jsdoc-to-markdown": "^6.0.1"
   }
 }
