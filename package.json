@@ -1,9 +1,10 @@
 {
-  "name": "bedrock-manifest-proxy",
+  "name": "@bedrock/manifest-proxy",
   "version": "1.2.1-0",
+  "type": "module",
   "description": "Bedrock Web App Manifest Proxy HTTP API",
   "license": "SEE LICENSE IN LICENSE.md",
-  "main": "./lib",
+  "main": "./lib/index.js",
   "scripts": {
     "lint": "eslint lib test"
   },
@@ -27,15 +28,14 @@
   "dependencies": {
     "@digitalbazaar/http-client": "^2.0.1",
     "content-type": "^1.0.4",
-    "esm": "^3.2.25",
     "http-cache-semantics": "^4.0.3",
     "lru-cache": "^6.0.0"
   },
   "peerDependencies": {
-    "bedrock": "^4.5.0",
-    "bedrock-express": "^6.4.1",
-    "bedrock-https-agent": "^2.3.0",
-    "bedrock-server": "^3.2.1"
+    "@bedrock/core": "^5.0.0",
+    "@bedrock/express": "^7.0.0",
+    "@bedrock/https-agent": "^3.0.0",
+    "@bedrock/server": "^4.0.0"
   },
   "directories": {
     "lib": "./lib"
@@ -44,6 +44,6 @@
     "eslint": "^7.32.0",
     "eslint-config-digitalbazaar": "^2.8.0",
     "eslint-plugin-jsdoc": "^37.9.7",
-    "jsdoc-to-markdown": "^6.0.1"
+    "jsdoc-to-markdown": "^7.1.1"
   }
 }
