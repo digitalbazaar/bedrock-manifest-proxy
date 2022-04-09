@@ -1,5 +1,10 @@
 # bedrock-manifest-proxy ChangeLog
 
+## 2.0.1 - 2022-04-xx
+
+### Fixed
+- Require lru-cache to avoid import order bugs.
+
 ## 2.0.0 - 2022-04-01
 
 ### Changed
