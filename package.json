@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-manifest-proxy",
   "dependencies": {
-    "@digitalbazaar/http-client": "^2.0.1",
+    "@digitalbazaar/http-client": "^3.0.1",
     "content-type": "^1.0.4",
-    "http-cache-semantics": "^4.0.3",
+    "http-cache-semantics": "^4.1.0",
     "lru-cache": "^6.0.0"
   },
   "peerDependencies": {
