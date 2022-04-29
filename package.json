@@ -1,6 +1,6 @@
 {
   "name": "@bedrock/manifest-proxy",
-  "version": "3.0.0",
+  "version": "3.0.1-0",
   "type": "module",
   "description": "Bedrock Web App Manifest Proxy HTTP API",
   "license": "SEE LICENSE IN LICENSE.md",
