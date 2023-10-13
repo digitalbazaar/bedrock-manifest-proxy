@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-manifest-proxy",
   "dependencies": {
-    "@digitalbazaar/http-client": "^3.0.1",
+    "@digitalbazaar/http-client": "^4.0.0",
     "content-type": "^1.0.4",
     "http-cache-semantics": "^4.1.0",
     "lru-cache": "^6.0.0"
@@ -45,5 +45,8 @@
     "eslint-config-digitalbazaar": "^2.8.0",
     "eslint-plugin-jsdoc": "^37.9.7",
     "jsdoc-to-markdown": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
