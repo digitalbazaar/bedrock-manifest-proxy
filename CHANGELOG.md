@@ -1,6 +1,6 @@
 # bedrock-manifest-proxy ChangeLog
 
-## 4.0.0 - 2023-10-TBD
+## 4.0.0 - 2023-10-13
 
 ### Changed
 - **BREAKING**: Drop support for Node.js < 18.
