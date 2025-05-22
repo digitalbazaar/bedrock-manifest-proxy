@@ -1,5 +1,10 @@
 # bedrock-manifest-proxy ChangeLog
 
+## 4.1.0 - 2025-05-dd
+
+### Changed
+- Use `lru-cache@11`.
+
 ## 4.0.0 - 2023-10-13
 
 ### Changed
