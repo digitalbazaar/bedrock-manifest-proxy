@@ -29,7 +29,7 @@
     "@digitalbazaar/http-client": "^4.0.0",
     "content-type": "^1.0.4",
     "http-cache-semantics": "^4.1.0",
-    "lru-cache": "^6.0.0"
+    "lru-cache": "^11.1.0"
   },
   "peerDependencies": {
     "@bedrock/core": "^6.0.0",
